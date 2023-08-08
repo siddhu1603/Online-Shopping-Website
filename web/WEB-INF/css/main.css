@@ -1,0 +1,178 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+body{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    min-height: 100vh; /*always have atleast the height of viewport*/
+    /*background-color: lightgray;*/
+    font-family: verdana, serif;
+}
+outer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color:lightsteelblue;
+}
+cheader{
+    background-color: lightslategray;
+     /*   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(10deg, darkslategray 0%, lightslategray 40%, lightsteelblue 100%);
+    background: linear-gradient(10deg, rgba(40,75,130,1) 0%, rgba(187,211,248,1) 60%, rgba(210,223,255,1) 100%);*/
+    height: 90px;
+    line-height: 80px;
+    padding: 4px 8px;
+    vertical-align: baseline;
+}
+cmenu{
+    background-color:  darkslateblue;/*deepskyblue;*/
+    height: 42px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 2px solid white;
+    padding-left: 10px;
+    line-height: 34px;
+}
+cmenu a{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+}
+cmenu a:hover{
+    color: yellow;
+}
+cbody{
+    /*background-color:  whitesmoke;*/
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+.bodyleft{
+    /*background-color:lightsteelblue;*/
+    min-width: 200px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+.bodyleft a{
+    color: darkblue;
+    text-decoration: none;
+}
+.bodyleft a:hover{
+    color: white;
+}
+.bodymain{
+    background-color:#fff;
+    flex-grow: 1;
+    padding: 6px 12px;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 4px;
+}
+.bodyright{
+    /*background-color:#b6d4fe;*/
+    min-width: 250px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+.bodyrighttop{
+    background: lavender;
+    padding: 8px;
+    border-radius: 0px 0px 8px 8px !important;
+    border: 1px solid gray;
+    min-width: 250px;
+    /*min-height: 400px;
+    max-height: 400px;*/
+}
+.bodyrightbottom{
+    background: #fff;
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid lightgray;
+    min-width: 250px;
+    flex-grow: 1;
+}
+footer{
+    /*background-color: lightsteelblue;*/
+    color: white;
+    height: 24px;
+    padding: 4px;
+    vertical-align: bottom;
+    font-size: 12px;
+}
+
+.divfrm{
+    color:red;
+    display:flex;
+    vertical-align: bottom;
+}
+select {
+    width: 200px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/down.png") 96% / 14px no-repeat local;
+}
+/* CAUTION: Internet Explorer hackery ahead */
+select::-ms-expand {
+    display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
+}
+/* Target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
+h4,h5{
+    color:#0d6efd!important;
+}
+myheader{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: hevaltica,sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #0070C0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+myheader:before {
+    width: 60px;
+    height: 6px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    margin-left: -8px;
+
+    background-color: lightsteelblue;
+}
+myheader:after {
+    width: 150px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 4px;
+    left: 40px;
+    margin-left: -38px;
+    background-color: lightsteelblue;
+    margin-bottom: 10px;
+}
